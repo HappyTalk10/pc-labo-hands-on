@@ -1,0 +1,24 @@
+# ===== C言語：コンパイルで作られるファイル =====
+*.o
+*.out
+*.exe
+
+# 実行ファイル（拡張子がないので、名前で指定）
+/five-devices/five_devices
+/cpu/bits
+/cpu/cores
+/storage/memory_vs_file
+/os/pid
+/memory/cache
+
+# ===== 実行中にできる一時ファイル =====
+# storage/memory_vs_file.c が作るファイル（終了時に削除されるが、途中で止めた場合に備える）
+testfile.bin
+
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== OS・エディタが作るファイル =====
+.DS_Store
+Thumbs.db
