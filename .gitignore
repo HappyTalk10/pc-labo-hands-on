@@ -18,6 +18,8 @@ testfile.bin
 # ===== Python =====
 __pycache__/
 *.pyc
+courses.csv
+library.csv
 
 # ===== OS・エディタが作るファイル =====
 .DS_Store
