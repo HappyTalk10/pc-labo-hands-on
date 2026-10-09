@@ -42,6 +42,9 @@ static double run(int n_threads, uint64_t *check) {
     double start = now_sec();
     for (int i = 0; i < n_threads; i++) {
         task[i].count = TOTAL_WORK / n_threads;
+        if ((uint64_t)i < TOTAL_WORK % (uint64_t)n_threads) {
+            task[i].count++;   /* 割り切れない分は、先頭のスレッドに1回ずつ追加する */
+        }
         task[i].result = 0;
         pthread_create(&th[i], NULL, worker, &task[i]);
     }
