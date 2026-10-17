@@ -18,6 +18,7 @@
 | [CPU](https://pc-labo.online/2023/06/29/cpu/) | [`cpu/`](https://github.com/HappyTalk10/pc-labo-hands-on/blob/main/cpu) | `bits.c`、`cores.c` | Codespaces |
 | [コンピュータの五大装置](https://pc-labo.online/2023/06/28/five-major-computer-devices/) | [`five-devices/`](https://github.com/HappyTalk10/pc-labo-hands-on/blob/main/five-devices) | `five_devices.c` | Codespaces |
 | [ネットワーク](https://pc-labo.online/2023/09/01/network/) | [`network/`](https://github.com/HappyTalk10/pc-labo-hands-on/blob/main/network) | （READMEのみ） | Codespaces |
+| [データベースの基本](https://pc-labo.online/2023/07/27/database/) | [`database/`](https://github.com/HappyTalk10/pc-labo-hands-on/blob/main/database) | `file_demo.py`、`db_demo.py` | Codespaces |
 
 ## 使い方
 
@@ -32,4 +33,5 @@
 - `storage/memory_vs_file.c` は、約256MBのメモリを使い、128MBの一時ファイルを作ります（終了時に削除されます）。
 - `cpu/cores.c` は、コアが1つの環境では速さを比べられません。Codespacesでは、マシンタイプによってコアの数が変わります。
 - `network/` は、コマンドだけで体験できます。Webサーバーを動かすため、ターミナルを2つ使います。
+- `database/file_demo.py` は、同じフォルダに `courses.csv` と `library.csv` を作ります。`db_demo.py` は、データベースをメモリ上に作るため、ファイルは残りません。
 - 実行結果や表示は、環境によって変わります。
