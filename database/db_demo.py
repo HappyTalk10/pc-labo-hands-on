@@ -9,7 +9,7 @@ con.execute("CREATE TABLE loans (student_id INTEGER, book TEXT)")
 
 con.execute("INSERT INTO students VALUES (1, '山田太郎', '090-9999-9999')")
 con.execute("INSERT INTO courses VALUES (1, '情報基礎')")
-con.execute("INSERT INTO loans VALUES (1, 'ITパスポート入門')")
+con.execute("INSERT INTO loans VALUES (1, '情報処理入門')")
 
 # 電話番号が変わった。1か所を更新するだけでよい
 con.execute("UPDATE students SET phone = '090-1111-1111' WHERE id = 1")
